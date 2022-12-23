@@ -1,0 +1,228 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: 
+*/
+
+.Container {
+    max-width: 1920px;
+    height: 100vh;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-areas:
+        "header menu menu menu"
+        "hero hero hero hero"
+        "hero hero hero hero"
+        "hero hero hero hero"
+        "hero hero hero hero"
+        "hero hero hero hero"
+        "main main nothing image"
+        "main main nothing image"
+        "main main nothing extra"
+        "main main nothing extra"
+        "banner banner banner banner"
+        "banner banner banner banner"
+    ;
+}
+.Header {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: header;
+    color: white;
+    background-color: rgb(18, 18, 47);
+}
+.Menu {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 3;
+    grid-area: menu;
+    color: white;
+    background-color: rgb(255, 49, 49);
+}
+
+.Hero {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 5;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-area: hero;
+    color: white;
+    background-color: rgb(75, 147, 189);
+}
+
+.Main {
+    -ms-grid-row: 7;
+    -ms-grid-row-span: 4;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: main;
+    color: white;
+    background-color: rgb(18, 18, 47);
+}
+.nothing {
+    -ms-grid-row: 7;
+    -ms-grid-row-span: 4;
+    -ms-grid-column: 3;
+    grid-area: nothing;
+}
+.Banner {
+    -ms-grid-row: 11;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 4;
+    grid-area: banner;
+    color: black;
+    background-color: rgb(231, 231, 111);
+}
+.Extra {
+    -ms-grid-row: 9;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 4;
+    grid-area: extra;
+    color: black;
+    background-color: rgb(96, 204, 168);
+}
+.Image {
+    -ms-grid-row: 7;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 4;
+    grid-area: image;
+    color: black;
+    background-color: rgb(129, 191, 191);
+}
+@media screen and (max-width:768px) {
+    .Container {
+        -ms-grid-columns: 33.33% 33.33% 33.33%;
+        grid-template-columns: 33.33% 33.33% 33.33%;
+            grid-template-areas: 
+            "header header header"
+            "hero hero hero"
+            "hero hero hero"
+            "hero hero hero"
+            "hero hero hero"
+            "hero hero hero"
+            "menu main main"
+            "menu main main"
+            "menu main main"
+            "menu main main"
+            "menu banner banner"
+            "menu banner banner"
+             "menu banner banner"
+            "menu extra image"
+            "menu extra image"  
+        ;
+    }  
+    .header {
+      -ms-grid-row: 1;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 3;
+    }
+    .menu {
+      -ms-grid-row: 7;
+      -ms-grid-row-span: 9;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 1;
+    }
+    .hero {
+      -ms-grid-row: 2;
+      -ms-grid-row-span: 5;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 3;
+    }
+    .main {
+      -ms-grid-row: 7;
+      -ms-grid-row-span: 4;
+      -ms-grid-column: 2;
+      -ms-grid-column-span: 2;
+    }
+    .image {
+      -ms-grid-row: 14;
+      -ms-grid-row-span: 2;
+      -ms-grid-column: 3;
+    }
+    .extra {
+      -ms-grid-row: 14;
+      -ms-grid-row-span: 2;
+      -ms-grid-column: 2;
+    }
+    .banner {
+      -ms-grid-row: 11;
+      -ms-grid-row-span: 3;
+      -ms-grid-column: 2;
+      -ms-grid-column-span: 2;
+    }
+}
+@media screen  and (max-width:480px){
+    .Container{     
+    -ms-grid-columns:100%; 
+    grid-template-columns:100%;
+    grid-template-areas: 
+    "header"
+    "menu"
+    "hero"
+    "hero"
+    "hero"
+    "hero"
+    "main"
+    "main"
+    "main"
+    "main"
+    "banner"
+    "banner"
+    "extra"
+    "extra"
+    "image"
+    "image"
+    ;
+    }
+    .header{
+      -ms-grid-row: 1;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 1;
+    }
+    .menu{
+      -ms-grid-row: 2;
+      -ms-grid-row-span: 1;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 1;
+    }
+    .hero{
+      -ms-grid-row: 3;
+      -ms-grid-row-span: 4;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 1;
+    }
+  
+    .main{
+      -ms-grid-row: 7;
+      -ms-grid-row-span: 4;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 1;
+    }
+  
+    .image{
+      -ms-grid-row: 15;
+      -ms-grid-row-span: 2;
+      -ms-grid-column: 1;
+    }
+  
+    .extra{
+      -ms-grid-row: 13;
+      -ms-grid-row-span: 2;
+      -ms-grid-column: 1;
+    }
+  
+    .banner{
+      -ms-grid-row: 11;
+      -ms-grid-row-span: 2;
+      -ms-grid-column: 1;
+      -ms-grid-column-span: 1;
+    }
+}
+
+
+    
